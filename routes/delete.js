@@ -15,7 +15,6 @@ routerDelete.delete('/employeelist/:id', async(req,res)=>{
     try {
         
         let id = req.params.id;
-        console.log('id check', id);
         let updateData = {$set: req.body};
         const updated = await employeeData.findByIdAndDelete(id);
         res.send('Deleted successfully');

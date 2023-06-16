@@ -19,10 +19,8 @@ const employeeSchema = mongoose.Schema({
     salary:{
         type:Number,
         required:true
-    },
-
-
-    collection: 'employee_list'
+    }
+    
 
 });
 
